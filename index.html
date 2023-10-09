@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>CALCULATOR</h1>
+
+    <div class="main">
+
+        <div class="container">
+
+            <div class="display">
+                <input id="screen" type="text" placeholder="0">
+            </div>
+            <div class="keys">
+                <input class="btn" type="button" value="7" onclick="calculate('7')">
+                <input class="btn" type="button" value="8" onclick="calculate('8')">
+                <input class="btn" type="button" value="9" onclick="calculate('9')">
+                <input class="btn" type="button" value="+" onclick="calculate('+')">
+
+                <input class="btn" type="button" value="4" onclick="calculate('4')">
+                <input class="btn" type="button" value="5" onclick="calculate('5')">
+                <input class="btn" type="button" value="6" onclick="calculate('6')">
+                <input class="btn" type="button" value="-" onclick="calculate('-')">
+
+                <input class="btn" type="button" value="1" onclick="calculate('1')">
+                <input class="btn" type="button" value="2" onclick="calculate('2')">
+                <input class="btn" type="button" value="3" onclick="calculate('3')">
+                <input class="btn" type="button" value="*" onclick="calculate('*')">
+
+                <input class="btn" type="button" value="00" onclick="calculate('00')">
+                <input class="btn" type="button" value="0" onclick="calculate('0')">
+                <input class="btn" type="button" value="%" onclick="calculate('%')">
+                <input class="btn" type="button" value="/" onclick="calculate('/')">
+
+                <input class="btn" type="button" value="." onclick="calculate('.')">
+                <input id="clrBtn" class="btnClr" type="button" value="CLR" onclick="clrScreen()">
+                <input id="delBtn" class="btnDel" type="button" value="DEL" onclick="delLastDigit()">
+                <input id="resBtn" class="btnRes" type="button" value="=" onclick="result()">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
